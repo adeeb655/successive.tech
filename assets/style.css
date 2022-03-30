@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Helvetica;
+
+}
+h2{
+    margin-top: 4px;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #3d3d3d;
+    line-height: 1.2;
+    padding-bottom:30px;
+
+}
+.container{
+    max-width: 1470px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#core_expertise{
+    padding: 50px 0px;
+}
+.experties{
+    background-color:transparent;
+    text-align: center;
+}
+/* .experties h2{
+    font-weight: 500;
+    color: #3d3d3d;
+    line-height: 1.2;
+    font-size: 50px;
+    padding-bottom:30px;
+} */
+.experties h2::after{
+    content: "";
+    position: absolute;
+    top: 110px;
+    right: 48%;    
+    width: 80px;
+    height: 5px;
+    background-image: linear-gradient(to right,#ffe11a,#fe0000);
+
+}
+.experties p{
+    font-size: 18px;
+    line-height: 31px;
+    margin-top: 20px;
+}
+.wraper{
+    display: flex;
+    text-align: left;
+    margin: 30px -12px 0;
+    
+    
+}
+.cards{
+    width: calc(100%/4);
+    background-color:transparent;
+    border: 1px solid black;
+    margin:12px;
+    padding: 20px;
+    min-height: 250px;
+    border: none;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+
+}
+.cards:hover{
+    box-shadow: 0px 15px 10px -15px #111;    
+
+
+}
+.cards h5{
+    font-weight: 500;
+    margin-bottom: 7px;
+    font-size: 22px;
+    min-height: 50px;
+}
+#case_study{
+    margin: 50px 0px;
+}
+.case{
+    display: flex;
+}
+.case_img{
+    width: 58%;
+    height: auto;
+}
+.case_img img{
+    max-height: 90%;
+    width: 100%;
+}
+.crypto{
+    width: 40%;
+    padding-left: 30px;
+}
+.client_card h2::before{
+    content: "";
+    position: absolute;
+    /* top:700px; */
+    /* right: 48%;     */
+    width: 4px;
+    height: 16px;
+    /* background-image: linear-gradient(to right,#ffe11a,#fe0000); */
+    background-image: linear-gradient(
+130deg,#ffe11a,#fe0000);
+}
+.crypto h6 a{
+    color: #1f1f1f;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 0px;
+    display: block;
+}
+/* .crypto h2{
+    margin-top: 4px;
+    font-size: 50px;
+    line-height: 1.2;
+} */
+.crypto p{
+    margin-top: 3%;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.client{
+    display: flex;
+    margin-top: 40px;
+}
+.client_card{
+    border: 1px solid #cecece;
+    background: #fdfdfd;
+    padding: 25px 73px 25px 25px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+/* .client_card h2{
+    margin-top: 10px;
+    font-size: 40px;
+} */
+#approach{
+    background: #f8f8f8;
+
+}
+.our_approach{
+    text-align: center;
+}
+.our_approach p{
+    font-size: 21px;
+    margin-top: 20px;
+}
+.our_approach h2:after{
+    content: "";
+    position: absolute; 
+    top: 614px;
+    right: 48%;    
+    width: 80px;
+    height: 5px;
+    background-image: linear-gradient(to right,#ffe11a,#fe0000);
+}
+.dots{
+    border-top: 4px dotted #ccd2e9;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 50%;
+    
+}
+/* .dots_bottom{
+    height: 400px;
+    width: 72%;
+    background-color: darkgoldenrod;
+    top: 1033px;
+    position: absolute;
+
+} */
+/* tab section  */
+/* .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height:450px;
+    width:450px;
+    border-radius:50%;
+  } */
+  .tab button {
+    background-color:white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 24px;
+    transition: 0.3s;
+    font-size: 28px;
+    border-radius: 50%;
+    color: red;
+    height: 70px;
+    width: 70px;
+  }
+  .tab button:nth-child(1){
+    position:absolute;
+    top:960px;
+    left:26.5%;
+  }
+  .tab button:nth-child(2){
+  position:absolute;
+  top:789px;
+  left:34%;
+  
+  }
+  .tab button:nth-child(3){
+    position:absolute;
+    top:706px;
+    left:48%;
+  
+  }
+  .tab button:nth-child(4){
+    position:absolute;
+    top:771px;
+    left:61%;
+  
+  }
+  .tab button:nth-child(5){
+    position:absolute;
+    top:960px;
+    left:70%;
+  
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color:#f30e0e;
+    color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  /* .tab button.active {
+    background-color: #ccc;
+  } */
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width:20%;
+    position:absolute;
+    top:828px;
+    left:39.5%;
+    height: 33%;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+    border: 1px solid #fff;
+
+  }
+  .tabcontent h3{
+      border: 1px solid red;
+      height: 70px;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin:-28px 0px 20px 130px;
+      
+  }
